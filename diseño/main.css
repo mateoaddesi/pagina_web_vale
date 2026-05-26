@@ -366,9 +366,9 @@ footer .footer-top {
 /* Marca (valesuberofit) más visible */
 footer .col-md-4.d-flex p,
 footer .col-md-4.d-flex .footer-brand {
-  font-size: 1.14rem !important;
+  font-size: 1.5rem !important;
   font-weight: 700 !important;
-  margin: 0 !important;
+  margin: 5px !important;
   padding: 0 !important;
 }
 
@@ -434,9 +434,9 @@ footer .col-md-4.d-flex {
 
 /* Corazón muy pegado al texto */
 footer .col-md-4.d-flex .bi {
-  margin: 0 !important;
+  margin: 20px !important;
   margin-right: 2px !important; /* separación fina de ~2px */
-  font-size: 1.35rem !important;
+  font-size: 3rem !important;
   line-height: 1 !important;
   display: inline-block !important;
 }
@@ -861,7 +861,7 @@ footer .col-md-4.d-flex span {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 75vh; /* ocupa al menos la mitad de la pantalla */
+  min-height: 700px; /* ocupa al menos la mitad de la pantalla */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -870,16 +870,16 @@ footer .col-md-4.d-flex span {
   border-radius: 0.6rem;
 }
 
-/* Imagen de fondo blureada (ajusta la ruta ../imagenes/hero.jpg si hace falta) */
+/* Imagen de fondo blureada (ajusta la ruta ../imagenes/hero.png si hace falta) */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image: url("../imagenes/hero.png");
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* escala con el tamaño del elemento */
+  background-position: center center; /* centra siempre */
   background-repeat: no-repeat;
-  transform: scale(1.06); /* evitar bordes al aplicar blur */
+  background-attachment: scroll; /* no fijar respecto a la ventana */
   filter: blur(8px) brightness(0.55);
   -webkit-filter: blur(8px) brightness(0.55);
   z-index: 0;
