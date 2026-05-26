@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
@@ -13,32 +17,14 @@
     <title>valesuberofit</title>
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-      >
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a
-            href="/"
-            class="d-inline-flex link-body-emphasis text-decoration-none"
-          >
-            <svg
-              class="bi"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
-            >
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-        </div>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2">Features</a></li>
-          <li><a href="#" class="nav-link px-2">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2">About</a></li>
+    <div class="cabecera">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Mis planes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
         </ul>
       </header>
     </div>
@@ -49,7 +35,189 @@
     </p>
 
     <p class="text-center">
-      <a href="#" class="btn btn-primary">Comenzar</a>
+      <a href="#" class="btn btn-primary">QUIERO MI PLAN</a>
     </p>
+
+    <div class="sobre-mi">
+      <div class="p-2 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Conoceme más</h1>
+          <p class="lead my-3">
+            Mí nombre es Valeria Subero. Soy preparadora física e instructora de
+            musculación, stretching y pilates. Entreno hace casi 10 años y
+            ejerzo hace 6. En este recorrido aprendí y tambien vivencié... Hoy,
+            toda mí experiencia te puede ayudar A VOS a lograr esa version que
+            estas buscando. Enamorándote del proceso. Sin prisa, pero sin pausa.
+            TU MOMENTO ES AHORA.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center">MIS PLANES</h2>
+    <p class="text-center">
+      Programas de entrenamiento por niveles, orientados a mejorar las
+      capacidades físicas básicas (fuerza, resistencia, velocidad y
+      flexibilidad)
+    </p>
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                aria-label="Placeholder: Thumbnail"
+                class="bd-placeholder-img card-img-top"
+                height="225"
+                preserveAspectRatio="xMidYMid slice"
+                role="img"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  RUTINA NIVEL 1: INICIALES
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Ideal para aquellas que recién inician en el fitness o quienes
+                  retoman la actividad.
+                </p>
+                <p class="card-text">¿Qué incluye?</p>
+                <ul>
+                  <li>Rutina de entrenamiento.</li>
+                  <li>Videos explicativos de cada ejercicio.</li>
+                  <li>
+                    Una mini guía de alimentación orientada a tu objetivo.
+                  </li>
+                  <li>Una videollamada para resolver dudas/consultas.</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">Precio: $25.000</small>
+                  <small class="text-body-secondary">Duracion: 6 semanas</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                aria-label="Placeholder: Thumbnail"
+                class="bd-placeholder-img card-img-top"
+                height="225"
+                preserveAspectRatio="xMidYMid slice"
+                role="img"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  RUTINA NIVEL 2: INTERMEDIA
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Ideal para aquellas personas que ya tienen una base de
+                  entrenamiento y quieren escalar de nivel.
+                </p>
+                <p class="card-text">¿Qué incluye?</p>
+                <ul>
+                  <li>Rutina de entrenamiento.</li>
+                  <li>Videos explicativos de cada ejercicio.</li>
+                  <li>
+                    Una mini guía de alimentación orientada a tu objetivo.
+                  </li>
+                  <li>Una videollamada para resolver dudas/consultas.</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">Precio: $25.000</small>
+                  <small class="text-body-secondary">Duracion: 8 semanas</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                aria-label="Placeholder: Thumbnail"
+                class="bd-placeholder-img card-img-top"
+                height="225"
+                preserveAspectRatio="xMidYMid slice"
+                role="img"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  RUTINA NIVEL 3: AVANZADA
+                </text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">
+                  Ideal para quienes ya ewntrenar hace un tiempo y se sientesn
+                  estancados o necesitan más exigencia y/o salir de su zona de
+                  comfort.
+                </p>
+                <p class="card-text">¿Qué incluye?</p>
+                <ul>
+                  <li>Rutina de entrenamiento.</li>
+                  <li>Videos explicativos de cada ejercicio.</li>
+                  <li>
+                    Una mini guía de alimentación orientada a tu objetivo.
+                  </li>
+                  <li>Una videollamada para resolver dudas/consultas.</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">Precio: $25.000</small>
+                  <small class="text-body-secondary">Duracion: 8 semanas</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <i class="bi bi-heart-fill"></i>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">valesuberofit</span>
+        </div>
+        <p class="text-center text-body-secondary">
+          Si tenes alguna duda ¡Charlemos!
+        </p>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/valesubero.fit/"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=valesubero.fitness@gmail.com&su=Consulta%20sobre%20los%20planes"
+              target="_blank"
+              aria-label="Email"
+            >
+              <i class="bi bi-envelope-paper-heart fs-5"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
