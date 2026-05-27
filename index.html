@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <link href="diseño/main.css" rel="stylesheet" />
-    <title>Valeria Subero | Fitness</title>
+    <title>Valeria Subero | Fitness Coach</title>
   </head>
   <body>
     <div class="cabecera">
@@ -269,6 +269,7 @@
             <a
               class="text-body-secondary"
               href="https://www.instagram.com/valesubero.fit/"
+              target="_blank"
               aria-label="Instagram"
             >
               <i class="bi bi-instagram fs-5"></i>
@@ -289,7 +290,7 @@
     </div>
     <script>
       (function () {
-        const phone = "5491122539021"; // reemplaza por tu número en formato internacional, sin signos ni espacios
+        const phone = "5491122539021";
         document.querySelectorAll(".whatsapp-btn").forEach((btn) => {
           const msg = encodeURIComponent(btn.dataset.message || "");
           btn.href = `https://wa.me/${phone}?text=${msg}`;
