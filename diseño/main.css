@@ -112,18 +112,67 @@ li,
   gap: 0;
   background: transparent;
 }
-.sobre-mi .sobre-mi-card-top {
-  padding: 0.75rem 1rem;
-}
-.sobre-mi .sobre-mi-card-bottom {
-  padding: 0.75rem 1rem;
-}
 
 /* Ensure text color inside left blocks */
 .sobre-mi .sobre-mi-card-top h1,
 .sobre-mi .sobre-mi-card-bottom p,
 .sobre-mi .sobre-mi-card-bottom .lead {
   color: var(--c-6) !important;
+}
+
+/* Responsive: apilar en móvil y reordenar para que quede:
+   1) sobre-mi-card-top (Conoceme más)
+   2) imagen
+   3) sobre-mi-card-bottom (Mi nombre es Valeria...) */
+@media (max-width: 767.98px) {
+  /* ESTA ES LA MAGIA NUEVA */
+  .sobre-mi .sobre-mi-left {
+    display: contents !important;
+  }
+
+  /* ... ACÁ ABAJO DEJÁS TODO EL RESTO DEL CÓDIGO QUE YA TENÍAS ... */
+  .sobre-mi .sobre-mi-wrapper {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0 !important;
+  }
+  /* Forzar orden móvil: título -> imagen -> texto */
+  .sobre-mi .sobre-mi-wrapper {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0 !important;
+  }
+
+  .sobre-mi .sobre-mi-card-top {
+    order: 1 !important;
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    text-align: center; /* centrar título en móvil */
+  }
+
+  .sobre-mi .sobre-mi-image {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    flex: 0 0 auto !important;
+    display: block !important;
+  }
+
+  .sobre-mi .sobre-mi-card-bottom {
+    order: 3 !important;
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .sobre-mi .sobre-mi-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important; /* o 'contain' si preferís ver toda la imagen sin recorte */
+    display: block !important;
+  }
 }
 
 /* Image block */
@@ -140,43 +189,6 @@ li,
   display: block;
   object-fit: cover;
   aspect-ratio: 4/5;
-}
-
-/* Responsive: apilar en móvil y reordenar para que quede:
-   1) sobre-mi-card-top (Conoceme más)
-   2) imagen
-   3) sobre-mi-card-bottom (Mi nombre es Valeria...) */
-@media (max-width: 767.98px) {
-  .sobre-mi .sobre-mi-wrapper {
-    flex-direction: column;
-    padding: 0;
-  }
-  .sobre-mi .sobre-mi-card-top {
-    order: 1;
-  }
-  .sobre-mi .sobre-mi-image {
-    order: 2;
-  }
-  .sobre-mi .sobre-mi-card-bottom {
-    order: 3;
-  }
-
-  .sobre-mi .sobre-mi-image {
-    width: 100%;
-    max-width: none;
-    height: 220px;
-    flex: 0 0 auto;
-  }
-  .sobre-mi .sobre-mi-image img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* ajustar paddings para móvil */
-  .sobre-mi .sobre-mi-card-top,
-  .sobre-mi .sobre-mi-card-bottom {
-    padding: 1rem;
-  }
 }
 
 /* Corregir recorte de la imagen en móvil: mostrarla completa */
@@ -409,6 +421,13 @@ footer p.text-center {
   }
   footer p.text-center {
     font-size: 1rem !important;
+  }
+  .sobre-mi .sobre-mi-card-top .display-4,
+  .sobre-mi .sobre-mi-card-top h1 {
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
   }
 }
 
@@ -905,9 +924,9 @@ footer .col-md-4.d-flex span {
 
 /* Titular más grande y elegante */
 .hero-content .display-4 {
-  font-size: clamp(1.6rem, 4.8vw, 3.6rem);
+  font-size: clamp(2rem, 4.8vw, 3.6rem);
   color: var(--c-6);
-  margin-bottom: 0.6rem;
+  margin-bottom: 1.7rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -942,5 +961,18 @@ h2.text-center {
   h2.text-center {
     margin-top: 1.5rem !important;
     margin-bottom: 1.15rem !important;
+  }
+}
+
+/* Reducir espacio entre "Conoceme más" y el texto en display normal */
+@media (min-width: 768px) {
+  .sobre-mi .sobre-mi-left {
+    gap: 1rem !important; /* menos separación entre los dos bloques */
+  }
+  .sobre-mi .sobre-mi-card-top {
+    padding-bottom: 0.35rem !important; /* acercar título al contenido */
+  }
+  .sobre-mi .sobre-mi-card-bottom {
+    padding-top: 0.35rem !important;
   }
 }
