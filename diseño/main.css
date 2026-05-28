@@ -130,6 +130,12 @@ li,
     display: contents !important;
   }
 
+  .sobre-mi .display-4 {
+    text-align: center !important;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
   /* ... ACÁ ABAJO DEJÁS TODO EL RESTO DEL CÓDIGO QUE YA TENÍAS ... */
   .sobre-mi .sobre-mi-wrapper {
     flex-direction: column !important;
